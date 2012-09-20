@@ -1602,14 +1602,26 @@ var MONKEY = MONKEY | {};
 		//template: Handlebars.templates.something
 	});
 
-	MONKEY.MainView = Ember.View.extend({
+
+	// load up the main view and template pair
+	MONKEY.MainView = Ember.View.create({
 		//template: Handlebars.templates.main_template
-	});
+		template: Handlebars.compile('<table></table>'),
+	}).appendTo('#app_container');
 
 }());
-var data1 = {},
-	data2 = {};
+MONKEY.Data = [
+	data1 = {
+		name: "Rob",
+		date: "",
+		details: ''
+	},
+	data2 = {
+		name: "Brendan",
+		date: "",
+		details: ''
+	},
 
 
-MONKEY.Data = [data1, data2];
+];
 (function(){var a=Handlebars.template,b=Handlebars.templates=Handlebars.templates||{};b.app=a(function(a,b,c,d,e){c=c||a.helpers;var f,g=this;return"<h1>Monkey</h1>"}),b.main_template=a(function(a,b,c,d,e){c=c||a.helpers;var f,g=this;return"<b>more buggers!!</b>\n"})})()
