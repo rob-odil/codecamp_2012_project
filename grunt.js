@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         handlebars: {
             all: {
                 src: 'lib/tmpl',
-                dest: 'lib/js/tmpl_compiled/templates.js'
+                dest: 'lib/tmpl_compiled/templates.js'
             }
         },
         coretmpl: {
@@ -23,14 +23,14 @@ module.exports = function(grunt) {
             files: ['lib/js_core/**/*.js']
         },
         appjs: {
-            files: ['lib/js/**/*.js']
+            files: ['lib/js/init.js', 'lib/js/models/*.js', 'lib/js/controllers/*.js', 'lib/js/views/*.js', 'lib/js/app.js', 'lib/js/run.js']
         },
         appcss: {
             files: ['lib/css/**/*.css']
         },
         concat: {
             js: {
-                src: ['<banner:meta.banner>', '<config:corejs.files>', '<config:appjs.files>'],
+                src: ['<banner:meta.banner>', '<config:corejs.files>', 'lib/tmpl_compiled/templates.js', '<config:appjs.files>'],
                 dest: 'public/js/app.js'
             },
             css: {
