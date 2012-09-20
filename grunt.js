@@ -16,6 +16,9 @@ module.exports = function(grunt) {
                 dest: 'lib/js/tmpl_compiled/templates.js'
             }
         },
+        coretmpl: {
+            files: 'lib/tmpl/*.handlebars'
+        },
         corejs: {
             files: ['lib/js_core/**/*.js']
         },
@@ -40,11 +43,11 @@ module.exports = function(grunt) {
         },
         watch: {
             tmpl: {
-                files: '<config:handlebars.all.src',
+                files: '<config:coretmpl.files>',
                 tasks: 'handlebars'
             },
             js: {
-                files: '<config:appjs.files>',
+                files: ['<config:appjs.files>', '<config:coretmpl.files>'],
                 tasks: 'concat:js'
             },
             css: {

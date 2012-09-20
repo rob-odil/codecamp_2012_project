@@ -1578,36 +1578,38 @@ d?a(d,"length"):0;this.arrayContentWillChange(b,c,e);if(!d||d.length===0)this.sp
 
 var MONKEY = MONKEY | {};
 
-$(document).ready(function() {   
+(function () {
 
+	MONKEY.App = Ember.Application.create({
+		rootElement: '#app_container'
+	});
 
+	MONKEY.MainController = Ember.ArrayController.extend({
+		content: [],
 
+		loadData: function () {
 
-MONKEY.App = Ember.Application.create({
-	rootElement: '#app_container'
-});
+		}
+	});
 
-MONKEY.MainController = Ember.ArrayController.extend({
-	content: [],
+	MONKEY.Model1 = Ember.Object.extend({});
 
-	loadData: function () {
+	MONKEY.Model2 = Ember.Object.extend({});
 
-	}
-});
+	MONKEY.View1 = Ember.CollectionView.extend({});
 
-MONKEY.Model1 = Ember.Object.extend({});
+	MONKEY.View2 = Ember.View.extend({
+		//template: Handlebars.templates.something
+	});
 
-MONKEY.Model2 = Ember.Object.extend({});
+	MONKEY.MainView = Ember.View.extend({
+		//template: Handlebars.templates.main_template
+	});
 
-MONKEY.View1 = Ember.CollectionView.extend({});
-
-MONKEY.View2 = Ember.View.extend({});
-
-
-    console.log('monkey');
-});
+}());
 var data1 = {},
 	data2 = {};
 
 
 MONKEY.Data = [data1, data2];
+(function(){var a=Handlebars.template,b=Handlebars.templates=Handlebars.templates||{};b.app=a(function(a,b,c,d,e){c=c||a.helpers;var f,g=this;return"<h1>Monkey</h1>"}),b.main_template=a(function(a,b,c,d,e){c=c||a.helpers;var f,g=this;return"<b>more buggers!!</b>\n"})})()
