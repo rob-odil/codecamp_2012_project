@@ -10,6 +10,12 @@ module.exports = function(grunt) {
                 '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
                 ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
         },
+        handlebars: {
+            all: {
+                src: 'lib/tmpl',
+                dest: 'lib/js/tmpl_compiled/templates.js'
+            }
+        },
         corejs: {
             files: ['lib/js_core/**/*.js']
         },
@@ -33,6 +39,10 @@ module.exports = function(grunt) {
             files: ['<config:app.files>']
         },
         watch: {
+            tmpl: {
+                files: '<config:handlebars.all.src',
+                tasks: 'handlebars'
+            },
             js: {
                 files: '<config:appjs.files>',
                 tasks: 'concat:js'
@@ -61,13 +71,15 @@ module.exports = function(grunt) {
             }
         }
     });
+
+    grunt.loadNpmTasks('grunt-handlebars');
     
     grunt.registerTask('server', 'Run webserver', function () {
         require('./server.js');
     });
 
     // Default task.
-    grunt.registerTask('default', 'concat server watch');
+    grunt.registerTask('default', 'handlebars concat server watch');
 };
 
 
