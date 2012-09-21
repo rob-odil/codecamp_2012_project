@@ -56,16 +56,20 @@ server.get('/', function(req,res){
 });
 
 server.get('/getdata', function(req, res) {
+
     var data1 = {
+            id: 001,
             name: "Rob",
-            date: "",
-            details: ''
+            date: "2012-09-20 12:05:36",
+            details: 'i always have monkeys in my codez'
         },
         data2 = {
+            id: 002,
             name: "Brendan",
-            date: "",
-            details: ''
+            date: "2012-09-20 12:22:04",
+            details: 'and then i have to locate said monkeys'
         };
+
     res.send(JSON.stringify([data1, data2]));
 });
 
