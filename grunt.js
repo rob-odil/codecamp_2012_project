@@ -23,7 +23,15 @@ module.exports = function(grunt) {
             files: ['lib/js_core/**/*.js']
         },
         appjs: {
-            files: ['lib/js/init.js', 'lib/js/app.js', 'lib/js/router.js', 'lib/js/controllers/*.js', 'lib/js/models/*.js', 'lib/js/views/*.js',  'lib/js/routers/*.js', 'lib/js/run.js']
+            files: [
+                'lib/js/init.js',
+                'lib/js/app.js',
+                'lib/js/router.js',
+                'lib/js/controllers/*.js',
+                'lib/js/models/*.js',
+                'lib/js/views/*.js', 
+                'lib/js/routers/*.js',
+                'lib/js/run.js']
         },
         appcss: {
             files: ['lib/css/**/*.css']
