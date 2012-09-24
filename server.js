@@ -37,6 +37,58 @@ server.error(function(err, req, res, next){
 server.listen( port);
 
 
+var postArray = [
+        {
+            id: 001,
+            title: 'Monkies in my code 1',
+            summary: 'summary: ',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
+            postdate: ''
+        },
+        {
+            id: 002,
+            title: 'Monkies in my code 2',
+            summary: 'summary: ',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
+            postdate: ''
+        },
+        {
+            id: 003,
+            title: 'Monkies in my code 3',
+            summary: 'summary: ',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
+            postdate: ''
+        },
+        {
+            id: 004,
+            title: 'Monkies in my code 4',
+            summary: 'summary: ',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
+            postdate: ''
+        },
+        {
+            id: 005,
+            title: 'Monkies in my code 5',
+            summary: 'summary: ',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
+            postdate: ''
+        },
+        {
+            id: 006,
+            title: 'Monkies in my code 6',
+            summary: 'summary: ',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
+            postdate: ''
+        },
+        {
+            id: 007,
+            title: 'Monkies in my code 7',
+            summary: 'summary: ',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
+            postdate: ''
+        }
+    ];
+
 
 ///////////////////////////////////////////
 //              Routes                   //
@@ -55,59 +107,23 @@ server.get('/', function(req,res){
   });
 });
 
-server.get('/getdata', function(req, res) {
+server.get('/post/:post_id', function(req, res) {
     res.header('Content-Type', 'application/json');
-    res.send(JSON.stringify([
-        {
-            id: 001,
-            title: 'Monkies in my code',
-            summary: '',
-            content: '',
-            postdate: ''
-        },
-        {
-            id: 002,
-            title: 'Monkies in my code',
-            summary: '',
-            content: '',
-            postdate: ''
-        },
-        {
-            id: 003,
-            title: 'Monkies in my code',
-            summary: '',
-            content: '',
-            postdate: ''
-        },
-        {
-            id: 004,
-            title: 'Monkies in my code',
-            summary: '',
-            content: '',
-            postdate: ''
-        },
-        {
-            id: 005,
-            title: 'Monkies in my code',
-            summary: '',
-            content: '',
-            postdate: ''
-        },
-        {
-            id: 006,
-            title: 'Monkies in my code',
-            summary: '',
-            content: '',
-            postdate: ''
-        },
-        {
-            id: 007,
-            title: 'Monkies in my code',
-            summary: '',
-            content: '',
-            postdate: ''
+    var found = false;
+    for (var i = 0; i < postArray.length; i++) {
+        if (postArray[i].id == req.param('post_id')) {
+            res.send(JSON.stringify(postArray[i]));
+            found = true;
         }
-    ]));
+    };
+    if (!found) {
+        res.send(JSON.stringify({err: 1}));
+    }
+});
+
+server.get('/posts', function(req, res) {
+    res.header('Content-Type', 'application/json');
+    res.send(JSON.stringify(postArray));
 });
 
 
