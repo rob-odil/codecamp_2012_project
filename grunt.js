@@ -10,14 +10,14 @@ module.exports = function(grunt) {
                 '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
                 ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
         },
-        handlebars: {
+        ember_handlebars: {
             all: {
-                src: 'lib/tmpl',
-                dest: 'lib/tmpl_compiled/templates.js'
+                src: 'lib/tmpl/*.hbs',
+                dest: 'lib/tmpl_compiled'
             }
         },
         coretmpl: {
-            files: 'lib/tmpl/*.handlebars'
+            files: 'lib/tmpl/*.hbs'
         },
         corejs: {
             files: ['lib/js_core/**/*.js']
@@ -26,20 +26,23 @@ module.exports = function(grunt) {
             files: [
                 'lib/js/init.js',
                 'lib/js/app.js',
-                'lib/js/router.js',
                 'lib/js/controllers/*.js',
                 'lib/js/models/*.js',
                 'lib/js/views/*.js', 
-                'lib/js/routers/*.js',
+                'lib/js/router.js',
                 'lib/js/run.js']
         },
         appcss: {
             files: ['lib/css/**/*.css']
         },
         concat: {
-            js: {
-                src: ['<banner:meta.banner>', '<config:corejs.files>', 'lib/tmpl_compiled/templates.js', '<config:appjs.files>'],
+            appjs: {
+                src: ['<banner:meta.banner>', 'lib/tmpl_compiled/*.js', '<config:appjs.files>'],
                 dest: 'public/js/app.js'
+            },
+            corejs: {
+                src: ['<banner:meta.banner>', '<config:corejs.files>'],
+                dest: 'public/js/core.js'
             },
             css: {
                 src: ['<config:appcss.files>'],
@@ -52,11 +55,11 @@ module.exports = function(grunt) {
         watch: {
             tmpl: {
                 files: '<config:coretmpl.files>',
-                tasks: 'handlebars'
+                tasks: 'ember_handlebars'
             },
             js: {
                 files: ['<config:appjs.files>', '<config:coretmpl.files>'],
-                tasks: 'concat:js'
+                tasks: 'concat:appjs'
             },
             css: {
                 files: '<config:appcss.files>',
@@ -83,14 +86,14 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-handlebars');
+    grunt.loadNpmTasks('grunt-ember-handlebars');
     
     grunt.registerTask('server', 'Run webserver', function () {
         require('./server.js');
     });
 
     // Default task.
-    grunt.registerTask('default', 'handlebars concat server watch');
+    grunt.registerTask('default', 'ember_handlebars concat server watch');
 };
 
 

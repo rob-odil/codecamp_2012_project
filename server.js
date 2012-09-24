@@ -56,21 +56,58 @@ server.get('/', function(req,res){
 });
 
 server.get('/getdata', function(req, res) {
-
-    var data1 = {
+    res.header('Content-Type', 'application/json');
+    res.send(JSON.stringify([
+        {
             id: 001,
-            name: "Rob",
-            date: "2012-09-20 12:05:36",
-            details: 'i always have monkeys in my codez'
+            title: 'Monkies in my code',
+            summary: '',
+            content: '',
+            postdate: ''
         },
-        data2 = {
+        {
             id: 002,
-            name: "Brendan",
-            date: "2012-09-20 12:22:04",
-            details: 'and then i have to locate said monkeys'
-        };
-
-    res.send(JSON.stringify([data1, data2]));
+            title: 'Monkies in my code',
+            summary: '',
+            content: '',
+            postdate: ''
+        },
+        {
+            id: 003,
+            title: 'Monkies in my code',
+            summary: '',
+            content: '',
+            postdate: ''
+        },
+        {
+            id: 004,
+            title: 'Monkies in my code',
+            summary: '',
+            content: '',
+            postdate: ''
+        },
+        {
+            id: 005,
+            title: 'Monkies in my code',
+            summary: '',
+            content: '',
+            postdate: ''
+        },
+        {
+            id: 006,
+            title: 'Monkies in my code',
+            summary: '',
+            content: '',
+            postdate: ''
+        },
+        {
+            id: 007,
+            title: 'Monkies in my code',
+            summary: '',
+            content: '',
+            postdate: ''
+        }
+    ]));
 });
 
 
