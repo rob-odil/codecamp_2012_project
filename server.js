@@ -107,6 +107,14 @@ server.get('/', function(req,res){
   });
 });
 
+server.get('/unittest', function(req,res){
+  res.render('unittest.jade', {
+    locals : { 
+              title : 'Testing'
+            }
+  });
+});
+
 server.get('/post/:post_id', function(req, res) {
     res.header('Content-Type', 'application/json');
     var found = false;

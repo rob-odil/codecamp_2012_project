@@ -20,7 +20,10 @@ module.exports = function(grunt) {
             files: 'lib/tmpl/*.hbs'
         },
         corejs: {
-            files: ['lib/js_core/**/*.js']
+            files: ['lib/js_core/front/*.js']
+        },
+        testjs: {
+            files: ['lib/js_core/test/*.js']
         },
         appjs: {
             files: [
@@ -29,24 +32,35 @@ module.exports = function(grunt) {
                 'lib/js/controllers/*.js',
                 'lib/js/models/*.js',
                 'lib/js/views/*.js', 
-                'lib/js/router.js',
-                'lib/js/run.js']
+                'lib/js/router.js'
+                ]
         },
         appcss: {
-            files: ['lib/css/**/*.css']
+            files: ['lib/css/front/*.css']
+        },
+        testcss: {
+            files: ['lib/css/test/*.css']
         },
         concat: {
             appjs: {
-                src: ['<banner:meta.banner>', 'lib/tmpl_compiled/*.js', '<config:appjs.files>'],
+                src: ['<banner:meta.banner>', 'lib/tmpl_compiled/*.js', '<config:appjs.files>', 'lib/js/run.js'],
                 dest: 'public/js/app.js'
             },
             corejs: {
                 src: ['<banner:meta.banner>', '<config:corejs.files>'],
                 dest: 'public/js/core.js'
             },
-            css: {
+            testjs: {
+                src: ['<banner:meta.banner>', 'lib/tmpl_compiled/*.js', '<config:appjs.files>', '<config:testjs.files>', 'lib/js/tests/*.js'],
+                dest: 'public/js/test.js'
+            },
+            appcss: {
                 src: ['<config:appcss.files>'],
                 dest: 'public/css/app.css'
+            },
+            testcss: {
+                src: ['<config:testcss.files>'],
+                dest: 'public/css/test.css'
             }
         },
         lint: {
@@ -61,9 +75,13 @@ module.exports = function(grunt) {
                 files: ['<config:appjs.files>', '<config:coretmpl.files>'],
                 tasks: 'concat:appjs'
             },
+            test: {
+                files: 'lib/js/tests/*.js',
+                tasks: 'concat:testjs'
+            },
             css: {
                 files: '<config:appcss.files>',
-                tasks: 'concat:css'
+                tasks: 'concat:appcss'
             }
         },
         jshint: {
