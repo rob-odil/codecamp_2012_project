@@ -16,6 +16,9 @@ module.exports = function(grunt) {
                 dest: 'lib/tmpl_compiled'
             }
         },
+        qunit: {
+            all: ['http://localhost:8081/testpage.html']
+        },
         coretmpl: {
             files: 'lib/tmpl/*.hbs'
         },
@@ -72,12 +75,12 @@ module.exports = function(grunt) {
                 tasks: 'ember_handlebars'
             },
             js: {
-                files: ['<config:appjs.files>', '<config:coretmpl.files>'],
-                tasks: 'concat:appjs'
+                files: ['<config:appjs.files>', '<config:coretmpl.files>', 'lib/js/run.js'],
+                tasks: ['concat:appjs', 'qunit']
             },
             test: {
                 files: 'lib/js/tests/*.js',
-                tasks: 'concat:testjs'
+                tasks: ['concat:testjs', 'qunit']
             },
             css: {
                 files: '<config:appcss.files>',
