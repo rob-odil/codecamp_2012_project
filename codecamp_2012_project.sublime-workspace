@@ -1,0 +1,677 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"detail",
+				"detailsController"
+			],
+			[
+				"a",
+				"appController"
+			],
+			[
+				"View",
+				"View1"
+			],
+			[
+				"app",
+				"app_container"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 7079,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/js/views/post.js",
+			"settings":
+			{
+				"buffer_size": 140,
+				"line_ending": "Unix",
+				"name": "post.js"
+			}
+		},
+		{
+			"file": "lib/tmpl/post.hbs",
+			"settings":
+			{
+				"buffer_size": 112,
+				"line_ending": "Unix",
+				"name": "post.hbs"
+			}
+		},
+		{
+			"file": "lib/js/views/posts.js",
+			"settings":
+			{
+				"buffer_size": 142,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/js/controllers/details.js",
+			"settings":
+			{
+				"buffer_size": 522,
+				"line_ending": "Unix",
+				"name": "details.js"
+			}
+		},
+		{
+			"file": "lib/tmpl/application.hbs",
+			"settings":
+			{
+				"buffer_size": 120,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/tmpl/details.hbs",
+			"settings":
+			{
+				"buffer_size": 62,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/js/controllers/posts.js",
+			"settings":
+			{
+				"buffer_size": 602,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/app.css",
+			"settings":
+			{
+				"buffer_size": 117,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/tmpl/posts.hbs",
+			"settings":
+			{
+				"buffer_size": 61,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/js/router.js",
+			"settings":
+			{
+				"buffer_size": 1376,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/css/basics.css",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/index.jade",
+			"settings":
+			{
+				"buffer_size": 149,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"snip fu",
+				"Snippet: setTimeout function"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/router.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/posts.hbs",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/details.hbs",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/views/details.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/views/_base.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl_compiled/application.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/run.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/views/posts.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/posts.handlebars",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/controllers/posts.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/application.handlebars",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/views/application.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/controllers/application.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/models/posts.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/models/model_2.js",
+		"/Users/bhill/Projects/codecamp_2012_project/grunt.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/app.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/application.tmpl",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/main_template.handlebars",
+		"/Users/bhill/Projects/codecamp_2012_project/server.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/routers/router_main.js",
+		"/Users/bhill/Projects/codecamp_2012_project/views/layout.jade",
+		"/Users/bhill/Projects/codecamp_2012_project/views/index.jade",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/data.js",
+		"/Users/bhill/Projects/test_back/ember_testing.html",
+		"/Users/bhill/Projects/test_back/ember_testing2.html",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/tmpl_compiled/templates.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/something.handlebars",
+		"/Users/bhill/Projects/codecamp_2012_project/package.json",
+		"/Users/bhill/Desktop/notes.txt",
+		"/Users/bhill/Projects/woww_project/app/app.js",
+		"/Volumes/REMOTE-ND-bhill_HOME/code-review-diffs/event_data_extraction.diff",
+		"/Users/bhill/Desktop/ZendTraining/01.php",
+		"/Users/bhill/Desktop/ZendTraining/02.php",
+		"/Users/bhill/Projects/workspace-automation/README.md",
+		"/Users/bhill/Projects/whooweswho/app/viewtest2.js",
+		"/Users/bhill/Projects/whooweswho/viewtest2.html",
+		"/Users/bhill/Projects/whooweswho/app/viewtest.js",
+		"/Users/bhill/Projects/whooweswho/index.html",
+		"/Users/bhill/Projects/whooweswho/login.html",
+		"/Users/bhill/Projects/whooweswho/app/app_test.js",
+		"/Users/bhill/Projects/whooweswho/app/app.js",
+		"/Users/bhill/Projects/whooweswho/app/testdata.js",
+		"/Users/bhill/Projects/whooweswho/libs/jquery.js",
+		"/Users/bhill/Projects/whooweswho/libs/ember.0-9-8-1.js",
+		"/Users/bhill/Projects/node_proj1/public/index.js",
+		"/Volumes/REMOTE-ND-bhill_HOME/code-review-diffs/atstool_service.diff",
+		"/Volumes/WORKSPACE-TOOLS/application/Bootstrap.php",
+		"/Volumes/WORKSPACE-TOOLS/library/Bravo/Minifier.php",
+		"/Volumes/WORKSPACE-TOOLS/application/controllers/CalendarController.php",
+		"/Volumes/WORKSPACE-TOOLS/application/configs/application.ini",
+		"/Volumes/WORKSPACE-TOOLS/application/configs/manifest.ini",
+		"/Volumes/WORKSPACE-TOOLS/application/configs/acls.ini",
+		"/Volumes/WORKSPACE-TOOLS/application/layouts/scripts/layout.phtml",
+		"/Volumes/WORKSPACE-TOOLS/application/layouts/scripts/tabs-calendar.phtml",
+		"/Volumes/WORKSPACE-TOOLS/library/sfServiceContainer/sfServiceContainerBuilder.php",
+		"/Volumes/WORKSPACE-TOOLS/library/CalendarTools/UserSettings.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Volumes/WORKSPACE-TOOLS/application/configs",
+			"/Volumes/WORKSPACE-TOOLS/library",
+			"/Volumes/WORKSPACE-TOOLS/application"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"connectControllers",
+			"minify",
+			"addHelperPath"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "server.js",
+					"settings":
+					{
+						"buffer_size": 7079,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1329,
+								1336
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 697.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/js/views/post.js",
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"auto_name": "post.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/tmpl/post.hbs",
+					"settings":
+					{
+						"buffer_size": 112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"auto_name": "post.hbs",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/js/views/posts.js",
+					"settings":
+					{
+						"buffer_size": 142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lib/js/controllers/details.js",
+					"settings":
+					{
+						"buffer_size": 522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								403,
+								403
+							]
+						],
+						"settings":
+						{
+							"auto_name": "details.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "lib/tmpl/application.hbs",
+					"settings":
+					{
+						"buffer_size": 120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/tmpl/details.hbs",
+					"settings":
+					{
+						"buffer_size": 62,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "lib/js/controllers/posts.js",
+					"settings":
+					{
+						"buffer_size": 602,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								467,
+								467
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/css/app.css",
+					"settings":
+					{
+						"buffer_size": 117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								114
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "lib/tmpl/posts.hbs",
+					"settings":
+					{
+						"buffer_size": 61,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "lib/js/router.js",
+					"settings":
+					{
+						"buffer_size": 1376,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1339,
+								1339
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "lib/css/basics.css",
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "views/index.jade",
+					"settings":
+					{
+						"buffer_size": 149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"server",
+				"server.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true
+}

@@ -1,2 +1,16 @@
-<span class='post_title' {{action viewPostDetails post}}>{{post.title}}</span><br />
-{{post.summary}}{{post.id}}
+<div class="post_container">
+	<div class="post">
+		<span class="post_title" {{action viewPostDetails post}}>
+			{{post.title}}
+		</span><br />
+		{{post.summary}}{{post.id}}<br />
+		<span>&nbsp;&nbsp;&nbsp;Author: </span><span {{bindAttr class="mypost :author"}}>{{post.author}}</span>
+	</div>
+
+	<div class="details_container">
+		<span {{action displayDetails target="view"}}>Details:</span>
+		<div class="details_contents">
+			{{post.details}}
+		</div>
+	</div>
+</div>
