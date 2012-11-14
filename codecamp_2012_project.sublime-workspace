@@ -27,6 +27,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "lib/js/tests/unittest.js",
+			"settings":
+			{
+				"buffer_size": 5596,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -56,42 +64,54 @@
 	},
 	"file_history":
 	[
-		"/Users/bhill/Projects/codecamp_2012_project/.coverrc",
-		"/Users/bhill/Projects/codecamp_2012_project/public/js/test.js",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/js/tests/unittest.js",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/post.hbs",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/css/front/basics.css",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/application.hbs",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/details.hbs",
-		"/Users/bhill/Projects/codecamp_2012_project/server.js",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/js/models/post.js",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/js/controllers/posts.js",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/init.js",
+		"/Users/rodil/projects/codecamp_2012_project/test/qunitrunner.js",
+		"/Users/rodil/projects/codecamp_2012_project/views/unittest.jade",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/run.js",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/router.js",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/app.js",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/tests/unittest.js",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/models/post.js",
+		"/Users/rodil/projects/codecamp_2012_project/lib/tmpl/post.hbs",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/controllers/posts.js",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/controllers/details.js",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/controllers/application.js",
+		"/Users/rodil/projects/codecamp_2012_project/lib/css/front/basics.css",
+		"/Users/rodil/projects/codecamp_2012_project/lib/tmpl/details.hbs",
+		"/Users/rodil/projects/codecamp_2012_project/server.js",
+		"/Users/rodil/projects/codecamp_2012_project/public/js/core.js",
+		"/Users/rodil/projects/codecamp_2012_project/public/js/test.js",
+		"/Users/rodil/projects/codecamp_2012_project/package.json",
+		"/Users/rodil/projects/codecamp_2012_project/views/index.jade",
+		"/Users/rodil/projects/codecamp_2012_project/lib/css/basics.css",
+		"/Users/rodil/projects/codecamp_2012_project/lib/tmpl/posts.hbs",
+		"/Users/rodil/projects/codecamp_2012_project/public/css/app.css",
+		"/Users/rodil/projects/codecamp_2012_project/lib/tmpl/application.hbs",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/views/posts.js",
+		"/Users/rodil/projects/codecamp_2012_project/lib/js/views/post.js",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/js/router.js",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/js/views/post.js",
-		"/Volumes/WORKSPACE-TOOLS/conf_recs.diff",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/js/app.js",
-		"/Users/bhill/Projects/codecamp_2012_project/views/unittest.jade",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/js/run.js",
-		"/Users/bhill/Projects/codecamp_2012_project/views/index.jade",
-		"/Users/bhill/Projects/codecamp_2012_project/grunt.js",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/js/views/posts.js",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/js/controllers/details.js",
-		"/Users/bhill/Projects/codecamp_2012_project/public/css/app.css",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/posts.hbs",
-		"/Users/bhill/Projects/codecamp_2012_project/lib/css/basics.css",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/details.hbs",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/js/views/details.js",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/js/views/_base.js",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl_compiled/application.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/run.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/views/posts.js",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/posts.handlebars",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/controllers/posts.js",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/application.handlebars",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/js/views/application.js",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/js/controllers/application.js",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/js/models/posts.js",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/js/models/model_2.js",
+		"/Users/bhill/Projects/codecamp_2012_project/grunt.js",
+		"/Users/bhill/Projects/codecamp_2012_project/lib/js/app.js",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/application.tmpl",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/tmpl/main_template.handlebars",
+		"/Users/bhill/Projects/codecamp_2012_project/server.js",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/js/routers/router_main.js",
 		"/Users/bhill/Projects/codecamp_2012_project/views/layout.jade",
+		"/Users/bhill/Projects/codecamp_2012_project/views/index.jade",
 		"/Users/bhill/Projects/codecamp_2012_project/lib/js/data.js",
 		"/Users/bhill/Projects/test_back/ember_testing.html",
 		"/Users/bhill/Projects/test_back/ember_testing2.html",
@@ -146,6 +166,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"	",
+			"App",
+			"	",
+			"\\t",
+			"server",
+			"xhr",
+			"app",
+			"qunit",
 			"connectControllers",
 			"minify",
 			"addHelperPath"
@@ -156,6 +184,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"    ",
+			"    \n"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -166,8 +196,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "lib/js/tests/unittest.js",
+					"settings":
+					{
+						"buffer_size": 5596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2400,
+								2400
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 959.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -202,9 +259,13 @@
 		]
 	},
 	"menu_visible": true,
+	"output.jslint_result_view":
+	{
+		"height": 244.0
+	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":

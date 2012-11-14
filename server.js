@@ -16,35 +16,31 @@
         postArray = [
             {
                 id: 1,
-                title: 'Monkies in my code 1',
-                summary: 'summary: ',
-                details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
+                title: 'Emberjs... Is there anything it can\'t do?',
+                details: 'I\'ve never had it wash my car... Sadly.',
                 postdate: '2012-09-15 12:00:01',
-                author: 'rodil@'
+                author: 'Rob'
             },
             {
                 id: 2,
-                title: 'Monkies in my code 2',
-                summary: 'summary: ',
-                details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
+                title: 'The zen of qunit.',
+                details: 'The beauty of qunit is in the way it builds your confidence in the code you write.',
                 postdate: '2012-09-15 12:00:01',
-                author: 'rodil@'
+                author: 'Brendan'
             },
             {
                 id: 3,
-                title: 'Monkies in my code 3',
-                summary: 'summary: ',
+                title: 'I love sum Lorums',
                 details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
                 postdate: '2012-09-15 12:00:01',
-                author: 'rodil@'
+                author: 'Brendan'
             },
             {
                 id: 4,
-                title: 'Monkies in my code 4',
-                summary: 'summary: ',
-                details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum nunc sit amet sapien iaculis tincidunt bibendum commodo tellus. Proin sed egestas tellus. Cras ultricies elementum nisi, eu placerat lacus iaculis non. Nunc gravida congue tincidunt. Phasellus nec felis leo, vitae placerat lacus. Etiam luctus, ligula quis tempus accumsan, est dolor suscipit nulla, vitae viverra velit diam at turpis. Donec sed egestas dui. Donec consequat posuere dictum.',
+                title: 'No Details...',
+                details: '',
                 postdate: '2012-09-15 12:00:01',
-                author: 'rodil@'
+                author: 'Rob'
             }
         ];
 

@@ -1,16 +1,14 @@
 <div class="post_container">
-	<div class="post">
-		<span class="post_title" {{action viewPostDetails post}}>
-			{{post.title}}
-		</span><br />
-		{{post.summary}}{{post.id}}<br />
-		<span>&nbsp;&nbsp;&nbsp;Author: </span><span {{bindAttr class="mypost :author"}}>{{post.author}}</span>
-	</div>
+    <div class="post" {{action viewPostDetails post}}>
+        <span class="post_title">
+            {{post.title}}
+        </span><br />
+        <span>&nbsp;&nbsp;&nbsp;Author: </span>{{post.author}}
+    </div>
 
-	<div class="details_container">
-		<span {{action displayDetails target="view"}}>Details:</span>
-		<div class="details_contents">
-			{{post.details}}
-		</div>
-	</div>
+    <div class="details_container">
+        {{#if post.detailsOpen}}
+            <strong>Details:</strong> {{post.details}}
+        {{/if}}
+    </div>
 </div>
